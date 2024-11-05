@@ -15,6 +15,7 @@ def fetch_studies(start_date="2024-10-20", end_date="2024-10-21", page_size=1000
         "countTotal": 'true',
         "pageSize": page_size
     }
+    # Avoiding Encoding chars in url from requests lib
     params = urllib.parse.urlencode(params, safe="[],:")
     response = requests.get(url=BASE_URL, params=params, headers=headers)
     response.raise_for_status()

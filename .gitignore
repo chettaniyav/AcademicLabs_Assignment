@@ -1,4 +1,2 @@
-core/__pycache__/api.cpython-312.pyc
-core/__pycache__/db.cpython-312.pyc
 env/*
-core/__pycache__/mapper.cpython-312.pyc
+core/__pycache__/*
