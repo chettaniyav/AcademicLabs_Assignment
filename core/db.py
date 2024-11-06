@@ -7,5 +7,5 @@ def get_database():
 
 
 def insert_studies(db, studies):
-    collection = db["studies"]
+    collection = db["studies_1"]
     collection.insert_many(studies)
